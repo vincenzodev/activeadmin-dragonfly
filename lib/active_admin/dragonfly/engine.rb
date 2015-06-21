@@ -1,14 +1,10 @@
 require 'dragonfly'
-
+require 'formtastic'
 module ActiveAdmin
   module Dragonfly
 
     class Engine < ::Rails::Engine
       initializer "Railsyard precompile hook", group: :all do |app|
-        # check if someone already initialized Dragonfly for Rails
-        unless ActiveRecord::Base.methods.include? :image_accessor
-          require 'dragonfly/rails/images'
-        end
 
         app.config.assets.precompile += [
           "active_admin/active_admin_dragonfly.js",

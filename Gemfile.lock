@@ -20,9 +20,10 @@ GIT
 PATH
   remote: .
   specs:
-    activeadmin-dragonfly (0.0.2)
+    activeadmin-dragonfly (0.0.3)
       activeadmin
-      dragonfly (= 0.9.15)
+      dragonfly (~> 1.0.10)
+      formtastic
       rack-cache
 
 GEM
@@ -52,6 +53,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    addressable (2.3.8)
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.1)
@@ -74,9 +76,10 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    dragonfly (0.9.15)
+    dragonfly (1.0.10)
+      addressable (~> 2.3)
       multi_json (~> 1.0)
-      rack
+      rack (>= 1.3.0)
     erubis (2.7.0)
     execjs (2.0.2)
     formtastic (2.3.0.rc2)
